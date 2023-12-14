@@ -11,11 +11,16 @@
     "build2": "next build && electron-builder"
   },
   "build": {
+    
     "win": {
-      "publish": ["github"]
+      "publish": [
+        "github"
+      ]
     },
     "linux": {
-      "publish": ["github"]
+      "publish": [
+        "github"
+      ]
     }
   },
   "repository": "https://github.com/mdhira-ai/DesktopClock",
@@ -24,6 +29,7 @@
     "provider": "github",
     "releaseType": "release"
   },
+
   "main": "main/main.js",
   "author": "habib",
   "description": "habib-software",
