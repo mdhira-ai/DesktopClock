@@ -18,7 +18,7 @@
       "publish": ["github"]
     }
   },
-  "repository": {},
+  "repository": "https://github.com/mdhira-ai/DesktopClock",
   "license": "MIT",
   "publish": {
     "provider": "github",
