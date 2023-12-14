@@ -3,7 +3,7 @@ productName: "Habib software"
 copyright: "Copyright (c) 2023 Habib software industry"
 win:
   target: ["dir", "portable", "zip"]
-  icon: "resources/icon.ico"
+  icon: "resources/icon.png"
 linux:
   target: ["dir", "appimage", "zip"]
   icon: "resources/icon.png"
