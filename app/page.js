@@ -54,7 +54,7 @@ const page = () => {
       >
 
         <label
-          className='text-white text-4xl font-bold'
+          className='text-red-500 text-4xl font-bold'
         >
           {mytime}
         </label>
