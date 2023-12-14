@@ -1,6 +1,8 @@
 const { app, BrowserWindow, ipcMain } = require("electron");
 const serve = require("electron-serve");
 const path = require("path");
+const { autoUpdater } = require("electron-updater")
+
 
 const appServe = app.isPackaged ? serve({
   directory: path.join(__dirname, "../out")
@@ -23,6 +25,8 @@ const createWindow = () => {
     focusable: true,
 
     autoHideMenuBar: true,
+
+
 
   });
 
@@ -56,6 +60,7 @@ const createWindow = () => {
 
 app.on("ready", () => {
   createWindow();
+  autoUpdater.checkForUpdatesAndNotify()
 });
 
 app.on("window-all-closed", () => {
