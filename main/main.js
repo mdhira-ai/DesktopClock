@@ -60,7 +60,13 @@ const createWindow = () => {
 
 app.on("ready", () => {
   createWindow();
-  autoUpdater.checkForUpdatesAndNotify()
+  autoUpdater.checkForUpdatesAndNotify({
+    body: 'A new version of the application is available! \n\n Restart your application',
+    title:`New Version Available ${
+      app.getVersion()
+    }`
+
+  })
 });
 
 app.on("window-all-closed", () => {
