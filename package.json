@@ -1,6 +1,6 @@
 {
   "name": "DesktopClock",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -11,15 +11,14 @@
     "build2": "next build && electron-builder"
   },
   "build": {
-    
     "win": {
-      "icon":"/resources/icon.png",
+      "icon": "/resources/icon.png",
       "publish": [
         "github"
       ]
     },
     "linux": {
-      "icon":"/resources/icon.png",
+      "icon": "/resources/icon.png",
       "publish": [
         "github"
       ]
@@ -31,13 +30,13 @@
     "provider": "github",
     "releaseType": "release"
   },
-
   "main": "main/main.js",
   "author": "habib",
   "description": "habib-software",
   "dependencies": {
     "concurrently": "^8.2.2",
     "electron-serve": "^1.2.0",
+    "electron-store": "^8.1.0",
     "electron-updater": "^6.1.7",
     "next": "14.0.4",
     "react": "^18",
