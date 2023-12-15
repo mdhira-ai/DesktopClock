@@ -1,6 +1,6 @@
 {
   "name": "DesktopClock",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -12,13 +12,13 @@
   },
   "build": {
     "win": {
-      "icon": "/resources/icon.png",
+      "icon": "./resources/icon.png",
       "publish": [
         "github"
       ]
     },
     "linux": {
-      "icon": "/resources/icon.png",
+      "icon": "./resources/icon.png",
       "publish": [
         "github"
       ]

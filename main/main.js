@@ -19,8 +19,8 @@ const createWindow = () => {
   const win = new BrowserWindow({
     width: 300,
     height: 200,
-    x: position[0],
-    y: position[1],
+    x: position?.[0],
+    y: position?.[1],
     icon: path.join(__dirname, "../resources/icon.png"),
     transparent: true,
     webPreferences: {
