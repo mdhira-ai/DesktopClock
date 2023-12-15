@@ -31,6 +31,8 @@ const createWindow = () => {
 
   });
 
+  
+
   win.on('blur', () => {
     win.setBackgroundColor('#00000000')
   })
@@ -38,6 +40,7 @@ const createWindow = () => {
   // win.on('focus', () => {
   //   win.setBackgroundColor('#00000000')
   // })  
+
 
 
 
